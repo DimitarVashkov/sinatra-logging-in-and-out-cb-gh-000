@@ -7,11 +7,10 @@
   </head>
   <body id="page-top">
     <% if Helpers.is_logged_in?(session) %>
-      <%= Helpers.current_user.username %>
-      <%= Helpers.current_user.balance %>
-    <% else %>
-      <a href='/'>Home</a>
-    <% end %>
-        <a href='/logout'>Log Out</a>
+     <h1>Welcome <%= Helpers.current_user(session).username %></h1>
+     <h3>Your Balance: <%= Helpers.current_user(session).balance %></h3>
+
+     <h4><a href="/logout">Log Out</a></h4>
+   <% end %>
   </body>
 </html>
