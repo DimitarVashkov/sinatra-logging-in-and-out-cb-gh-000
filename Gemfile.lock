@@ -107,6 +107,7 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord (~> 5.1, >= 5.1.5)
+  bundler
   capybara
   database_cleaner!
   pry
